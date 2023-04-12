@@ -17,14 +17,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #35a4ff;
-    color: #282c34;
+    background-color: #151515;
+    color: white;
     width: 100%;
-    height: 50px;
+    height: 60px;
     font-size: 18px;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
     outline: none;
     transition: background-color 0.3s ease-in-out;
   }

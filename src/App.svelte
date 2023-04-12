@@ -5,12 +5,14 @@
 <Calculator />
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
   :global(body) {
+    --primary: #774eff;
+    --secondary: #474ce7;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    background: linear-gradient(45deg, #61dafb, #3d7eff);
+    font-family: "Fira Sans" ,sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;

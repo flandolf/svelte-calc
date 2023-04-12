@@ -1,10 +1,12 @@
-export function evaluate(expression: string): string {
-  try {
-    const sanitizedExpression = expression.replace(/[^0-9+\-*/.]/g, "");
-
-    const result = eval(sanitizedExpression);
-    return result.toString();
-  } catch (error) {
-    return "Error";
+function evaluate(expression: string): string {
+  expression = expression.replace(/×/g, "*").replace(/÷/g, "/");
+  const regex = /^[^a-zA-Z]*$/;
+  if (!regex.test(expression)) {
+    return "Invalid expression";
   }
+  console.log("expression", expression)
+  const result = eval(expression);
+  return result.toString();
 }
+
+export default evaluate;
